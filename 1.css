@@ -46,6 +46,8 @@
   }
   .header-middle-nav ul {
     display: flex;
+    align-items: end;
+
   }
   .header-middle-nav ul li {
     list-style-type: none;
@@ -73,6 +75,8 @@
   }
   .header-list ul {
     display: flex;
+    align-items: baseline;
+
   }
   .header-list ul li {
     list-style-type: none;
