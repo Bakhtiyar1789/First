@@ -128,6 +128,11 @@ button.blue {
 }
 
 /* Main styles */
+.listings-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .hero {
   position: relative;
@@ -202,8 +207,532 @@ button.blue {
   background: #E05D50;
 }
 
+/* categroies styles 1 */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.categories-section {
+  text-align: center;
+  padding: 50px 0;
+  background: #fff;
+}
+
+.categories-section h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.category {
+  background: #f9f9f9;
+  border: none;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background 0.3s ease;
+  width: 250px;
+  height: 72px;
+  cursor: pointer;
+  outline: none;
+  padding-top: 20px;
+}
+
+.category img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.category span {
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.category:hover {
+  transform: translateY(-5px);
+  background: #e0e0e0;
+}
+
+.category.more {
+  width: 112px;
+  height: 70px;
+}
+
+.horizontal-line {
+  height: 1px; /* Thickness of the line */
+  background-color: #ccc; /* Color of the line */
+  width: 100%; /* Line spans the full container width */
+}
+
+/* categroies styles 2 */
+
+.categories-section2 {
+  text-align: center;
+  padding: 50px 0;
+  background: #fff;
+}
+
+.categories-section2 h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.categories2 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.category2 {
+  background: #f9f9f9;
+  border: none;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background 0.3s ease;
+  width: 220px;
+  height: 50px;
+  cursor: pointer;
+  outline: none;
+  padding-top: 20px;
+}
+
+.category2 img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.category2 span {
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.category2:hover {
+  transform: translateY(-5px);
+  background: #e0e0e0;
+}
+
+.category2.more {
+  width: 48px;
+  height: 48px;
+  background-color: #37C75F;
+}
+.category2.more img {
+  width: 40px;
+  height: 50px;
+  display: flex;
+}
+.lines {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.horizontal-line2,
+.horizontal-line3,
+.horizontal-line4 {
+  height: 4px; /* Thickness of the lines */
+  width: 60px; /* Length of the lines */
+}
+
+.horizontal-line2 {
+  background-color: #199FD9; /* Blue line color */
+}
+
+.horizontal-line3 {
+  background-color: #F22626; /* Red line color */
+}
+
+.horizontal-line4 {
+  background-color: #37C75F; /* Green line color */
+}
+
+.category2.all {
+  width: 112px;
+  height: 50px;
+  background-color:#E93740
+}
+.category2.all span{
+  color: white;
+}
+
+/* categroie card */
+
+.card {
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  background: white;
+  margin-bottom: 20px; /* Added for spacing between cards */
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.listings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #ff6347;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.badge img {
+  margin-left: 5px;
+}
+
+.yacht-image {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.price {
+  font-size: 18px;
+  color: #ff6347; /* Color adjusted to match the badge */
+  margin: 0;
+}
+
+.title {
+  font-size: 14px;
+  color: #333;
+  margin: 10px 0 5px;
+}
+
+.details {
+  font-size: 12px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.owner-info {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.owner-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.owner-name {
+  font-size: 14px;
+  color: #333;
+}
+
+.favorite-image {
+  width: 20px;
+  height: 20px;
+  margin-left: auto;
+}
+
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.favorite-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.favorite-button img {
+  width: 20px;
+  height: 20px;
+  transition: filter 0.3s ease;
+}
+
+.favorite-button.active img {
+  filter: invert(34%) sepia(85%) saturate(7477%) hue-rotate(345deg) brightness(95%) contrast(109%);
+}
+button.loadmore {
+  background: #ee1905;
+  border: none;
+  width: 150px;
+  height: 50px;
+  border-radius: 25px; /* Changed from 40% to a more standard button shape */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button.loadmore:hover {
+  background-color: #cc1604; /* Slightly darker shade for hover effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+
+/* Metrics */
+
+
+.insights-metrics {
+  display: flex;
+  align-items: flex-start;
+  background-color: #d3d3d3;
+  padding: 50px 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.metrics-text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.metrics-text h2 {
+  font-size: 40px;
+  color: #333;
+}
+
+.metrics-container {
+  flex: 3;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.metric-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+  position: relative;
+}
+
+.metric-image {
+  position: relative;
+}
+
+.metric-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.metric-image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+
+.metric-image:hover .overlay {
+  opacity: 1;
+}
+
+.metric-image .text {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.metric-card p {
+  padding: 15px;
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+}
+
+/* Featured Locations */
+
+.Locations {
+  text-align: center;
+  padding: 50px 0;
+  background: #fff;
+}
+
+.Locations h2 {
+  font-size: 40px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+
+/* General Styles for Featured Locations Section */
+
+.Location-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.Location-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+.Location-image {
+  position: relative;
+  height: 200px;
+}
+
+.Location-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.Location-card:hover .Location-image img {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.Location-name {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Styling for the second row to center the cards */
+.Location-container .Location-card:nth-child(4),
+.Location-container .Location-card:nth-child(5) {
+  grid-column: span 1;
+  justify-self: center; /* Center these cards in their grid columns */
+}
+
+
+
+
+/* General Styles for Featured Locations Section */
+
+.Experiences {
+  text-align: center;
+  padding: 50px 0;
+  background: #fff;
+}
+
+.Experiences h2 {
+  font-size: 40px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.Experiences-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.Experiences-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px; /* Adjusted for a larger display */
+  height: 400px; /* Maintain consistent height */
+  text-align: center;
+}
+
+.Experiences-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.Experiences-card:hover .Experiences-image img {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.Experiences-card::after {
+  content: attr(data-location);
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
 
 /* Footer styles */
+
+
 #footer{
 
   background-color: #ececec;
@@ -213,7 +742,6 @@ button.blue {
 }
 .footer-wrap{
   padding: 75px;
-
   display: flex;
   align-items:flex-start;
   justify-content: space-between;
